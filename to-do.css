@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Klee One', cursive;
+}
+
+.black {
+    background-color: rgb(12, 11, 11);
+    height: 100vh;
+    width: 100vw;
+    transition: 0.5s ease-in;
+    overflow-x: hidden;
+}
+
+.light {
+    background-color: white;
+    /* background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat; */
+    height: 40vh;
+    width: 100vw;
+    background-size: cover !important;
+    transition: 0.5s ease-in;
+}
+
+.contain {
+    max-width: 100%;
+    margin: auto;
+    /* padding: 0 6rem; */
+}
+
+.container {
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 150px;
+    transition: 0.5s ease-out;
+    background-size: cover !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+}
+
+.light-container {
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 100vw;
+    background-size: cover !important;
+    position: absolute;
+    margin-bottom: 150px;
+    display: none;
+    transition: 0.5s ease-out;
+}
+
+
+/* .bodied {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-bottom: 100px;
+    margin-bottom: 350px;
+} */
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.app-name {
+    /* margin-top: -60px; */
+    letter-spacing: 15px;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    /* bottom: 160px; */
+}
+
+.app-name h2 {
+    margin-top: 150px;
+}
+
+.icons {
+    position: relative;
+    margin-top: 160px;
+}
+
+/* .fa-sun {
+    cursor: pointer;
+} */
+
+.icon{
+    cursor: pointer;
+}
+
+.hi-light {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* background-image: url(./images/icon-sun.svg); */
+}
+
+.dark {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    /* display: none; */
+}
+
+.con{
+    display: none;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.input {
+    display: flex;
+    background-color: #141414;
+    padding: 10px 25px;
+    /* margin-right: 20px; */
+    position: absolute;
+    border: none;
+    border-radius: 5px;
+}
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid violet;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#typed {
+    width: 35vw;
+    height: 30px;
+    /* margin-left: 38px; */
+    outline: none;
+    position: relative;
+    background-color: #141414;
+    color: white;
+    border: none;
+}
+
+.far {
+    cursor: pointer;
+    color: white;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.far:hover {
+    color: violet;
+}
+
+.todo-input{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inputs{
+    /* display: flex; */
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.new{
+    display: flex;
+}
+
+.list{
+    width: 48vw;
+    list-style: none; 
+    /* border: 1px solid black; */
+}
+
+.todo{
+    margin: 0.5rem;
+    background: #141414;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+li.todo-item{
+    display: flex;
+    justify-content: start;
+}
+
+/* .todo-item li{
+    justify-content: start;
+} */
+
+.first-btn{
+    background: #4D32B2;
+    color: white;
+    border: none;
+    /* padding: 0.5rem; */
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin-left: 5px;
+    /* margin-right: 200px; */
+} 
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.second-btn{
+    background: #FF3E41;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+    /* position: absolute; */
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+.incomplete{
+    transform: translateY(8rem) rotateZ(-60deg);
+    opacity: 0;
+    transition: 1.5s ease-out;
+}

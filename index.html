@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="to-do.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+</head>
+
+<body class="black">
+    <div class="contain">
+        <div class="container" id="container"></div>
+        <div class="light-container" id="light-container"></div>
+        <div class="bodied">
+            <div class=nav>
+                <div class="app-name">
+                    <h2>TODO</h2>
+                </div>
+                <div class="icons" id="icons">
+                    <button class="hi-light">
+                        <img src="images/icon-sun.svg" class="icon" id="icon">
+                    </button>
+                    <button class="dark">
+                        <img src="images/icon-moon.svg" class="con" id="con">
+                </button>
+                </div>
+            </div>
+            <div class="box">
+               <button class="input" id="input">
+                    <div class="circle"></div>
+                 <input type="text" placeholder="Type Something..." id="typed" class="todo-inputs" required="">
+                  <i class="far fa-plus-square fa-2x"></i>
+               </button>
+                
+            </div> 
+        </div>
+        <div class="todo-input">
+            <button class="inputs">
+            <ul class="list"></ul>
+            </button>
+        </div>
+    </div>
+
+    <script src="to-do.js"></script>
+</body>
+
+</html>
