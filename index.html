@@ -19,36 +19,53 @@
 
 <body class="black">
     <div class="contain">
-        <div class="container" id="container"></div>
-        <div class="light-container" id="light-container"></div>
+        <div class="container" id="container">
+
+        </div>
+
+        <div class="light-container" id="light-container">
+
+        </div>
+
         <div class="bodied">
             <div class=nav>
                 <div class="app-name">
                     <h2>TODO</h2>
                 </div>
+
                 <div class="icons" id="icons">
-                    <button class="hi-light">
-                        <img src="images/icon-sun.svg" class="icon" id="icon">
+                    <button type="button" class="hi-light">
+                        <img src="images/icon-sun.svg" alt="sun" class="icon" id="icon">
                     </button>
-                    <button class="dark">
-                        <img src="images/icon-moon.svg" class="con" id="con">
-                </button>
+                    <button type="button" class="dark">
+                        <img src="images/icon-moon.svg" alt="moon" class="con" id="con">
+                    </button>
                 </div>
             </div>
+
             <div class="box">
-               <button class="input" id="input">
+               <button type="button" class="input" id="input">
                     <div class="circle"></div>
-                 <input type="text" placeholder="Type Something..." id="typed" class="todo-inputs" required="">
-                  <i class="far fa-plus-square fa-2x"></i>
+                    <input type="text"
+                        placeholder="Type Something..." 
+                        id="typed" 
+                        class="todo-inputs" 
+                        required=""
+                    >
+                    <i class="far fa-plus-square fa-2x"></i>
                </button>
                 
             </div> 
         </div>
+
         <div class="todo-input">
-            <button class="inputs">
-            <ul class="list"></ul>
+            <button type="button" class="inputs">
+                <ul class="list">
+
+                </ul>
             </button>
         </div>
+
     </div>
 
     <script src="to-do.js"></script>

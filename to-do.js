@@ -1,4 +1,4 @@
-//theme style, body style, inputbox style and list style.
+//theme style, body style, input box style and list style.
 const icon = document.getElementById('icon');
 const con = document.getElementById('con');
 const container = document.getElementById('container');
@@ -120,7 +120,10 @@ function addTodo(event) {
     todoDiv.insertBefore(firstButton, todoDiv.firstChild);
 
     //add todoDiv to list
-    list.appendChild(todoDiv);
+    if (todoInputs.value.trim().length !== 0) {
+        list.appendChild(todoDiv);
+    }
+    // list.appendChild(todoDiv);
     
     //clear the todoinputs value
     todoInputs.value = '';
